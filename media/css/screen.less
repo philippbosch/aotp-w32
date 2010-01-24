@@ -1,0 +1,141 @@
+@highlight: #09735E;
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: #F0F0E9 url("../img/bg.png") repeat;
+    color: #333;
+    color: rgba(0,0,0,0.75);
+    border-top: 10px solid #363630;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Helvetica, Arial, sans-serif;
+    font-size: 90%;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: @highlight;
+}
+
+#page {
+    width: 960px;
+    margin: 48px auto;
+}
+
+#header {
+    margin-bottom: 60px;
+
+    h1 {
+        font-size: 275%;
+        font-family: Georgia, "Times New Roman";
+        letter-spacing: -0.02em;
+        color: @highlight;
+    }
+    h2 {
+        color: rgba(0,0,0,0.6);
+        letter-spacing: -0.02em;
+    }
+}
+
+#nav {
+    float: left;
+    width: 250px;
+    
+    li {
+        a {
+            font-size: 130%;
+            letter-spacing: -0.0em;
+            display: block;
+            padding: 8px 8px 8px 0px;
+            color: rgba(0,0,0,0.5);
+            background: rgba(255,255,255,0.5);
+            border: 1px solid rgba(0,0,0,0.08);
+            margin-bottom: 4px;
+            margin-left: -1000px;
+            padding-left: 1000px;
+            margin-right: -1000px;
+            padding-right: 1000px;
+        }
+    }
+    
+    li a:hover, li.active a {
+        border-color: rgba(0,0,0,0.12);
+        color: rgba(0,0,0,0.75);
+        background: rgba(255,255,255,0.8);
+    }
+    
+    li.active a {
+        color: @highlight;
+    }
+}
+
+#content {
+    width: 650px;
+    min-height: 500px;
+    padding: 0 30px;
+    float: left;
+    background: #F0F0E9 url("../img/bg.png") repeat;
+}
+
+#footer {
+    clear: both;
+}
+
+h3 {
+    font-size: 140%;
+    color: rgba(0,0,0,1);
+}
+
+p {
+    line-height: 1.6;
+    margin: 1em 0;
+}
+
+p:first-child {
+    margin-top: 0;
+}
+
+.gallery {
+    position: relative;
+    width: 650px;
+    height: 486px;
+    
+    .photo {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+    img {
+        box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        -moz-box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        -webkit-box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        -op-box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    }
+    
+    .caption {
+        position: absolute;
+        left: -280px;
+        bottom: 40px;
+        width: 250px;
+        text-align: right;
+        font-size: 85%;
+        line-height: 1.5;
+    }
+    
+    .gallery-nav {
+        position: absolute;
+        left: -280px;
+        bottom: 0;
+        width: 250px;
+        text-align: right;
+        font-size: 250%;
+        line-height: 0.6;
+        
+        a:focus {
+            outline: 0;
+        }
+    }
+}

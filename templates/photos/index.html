@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load thumbnail %}
+
+{% block content %}
+    <div class="gallery">
+    {% for photo in photos %}
+        <div class="photo">
+            <img src="{% thumbnail photo.photo 648x486 detail %}" alt="" />
+            <div class="caption">{{ photo.caption }}</div>
+        </div>
+    {% endfor %}
+    </div>
+{% endblock %}

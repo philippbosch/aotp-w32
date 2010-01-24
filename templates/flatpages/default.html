@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h3>{{ flatpage.title }}</h3>
+    {{ flatpage.content|linebreaks }}
+{% endblock %}
