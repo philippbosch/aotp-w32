@@ -4,11 +4,11 @@ html, body {
   background-attachment: fixed;
 }
 body {
-  margin-top: 10px;
   color: #333333;
   color: rgba(0, 0, 0, 0.75);
   font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Helvetica, Arial, sans-serif;
   font-size: 90%;
+  border-top: 10px solid #363630;
 }
 a {
   text-decoration: none;
@@ -21,21 +21,7 @@ a {
   background: url("../img/content-bg.png") repeat-y;
   background-position: 184px 0;
 }
-#header {
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  padding-left: 184px;
-  border-top: 10px solid #363630;
-}
-#header #title {
-  width: 616px;
-  margin: 0 auto;
-  background: url('../img/header-bg.png') bottom left repeat-x;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
+#header { padding: 50px 0 80px 244px; }
 #header h1 {
   font-size: 275%;
   font-family: Georgia, "Times New Roman";
@@ -50,12 +36,12 @@ a {
   float: left;
   width: 167px;
   text-align: right;
-  position: fixed;
   margin-right: 17px;
+  position: relative;
 }
 #nav ul {
   position: absolute;
-  top: 186px;
+  top: 0px;
   right: 0;
 }
 #nav li a {
@@ -77,10 +63,9 @@ a {
 }
 #nav li.active a { color: #09735e; }
 #content {
+  float: right;
   width: 616px;
-  padding: 190px 60px 30px 60px;
-  margin-left: 184px;
-  float: left;
+  padding: 0px 60px 30px 60px;
   background: url("../img/content-bg.png") repeat-y;
 }
 #footer {

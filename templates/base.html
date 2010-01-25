@@ -21,17 +21,18 @@
 <body{% block body_attr %} class="{% block body_class %}{% endblock %}"{% endblock %}>
     <div id="page">
         
+        <div id="header">
+            <div id="title">
+                <h1>Büro Wilhelmstraße</h1>
+                <h2>Büroetage mit fünf Räumen gegenüber Amts- und Landgericht</h2>
+            </div>
+        </div>
+
         <div id="nav">
             {% navbar %}
         </div>
         
         <div id="content">
-            <div id="header">
-                <div id="title">
-                    <h1>Büro Wilhelmstraße</h1>
-                    <h2>Büroetage mit fünf Räumen gegenüber Amts- und Landgericht</h2>
-                </div>
-            </div>
             {% block content %}
             {% endblock %}
         </div>
