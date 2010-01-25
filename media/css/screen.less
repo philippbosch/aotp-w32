@@ -17,6 +17,7 @@ body {
 a {
     text-decoration: none;
     color: @highlight;
+    border-bottom: 1px solid #ccc;
 }
 
 #page {
@@ -44,9 +45,8 @@ a {
 
 #nav {
     float: left;
-    width: 167px;
+    width: 184px;
     text-align: right;
-    margin-right: 17px;
     position: relative;
     
     ul {
@@ -62,8 +62,9 @@ a {
             text-transform: uppercase;
             letter-spacing: 0.1em;
             display: block;
-            padding: 8px 0px;
+            padding: 8px 17px;
             color: rgba(0,0,0,0.4);
+            border-bottom: 0;
         }
     }
     
@@ -103,6 +104,18 @@ p:first-child {
     margin-top: 0;
 }
 
+#content ul {
+    li {
+        margin-bottom: 1em;
+        background: url('../img/bullet.png') 0 0.2em no-repeat;
+        padding-left: 1.5em;
+    }
+}
+
+ul.keyfacts {
+    font-size: 125%;
+}
+
 .gallery {
     position: relative;
     width: 650px;
@@ -139,6 +152,10 @@ p:first-child {
         text-align: right;
         font-size: 250%;
         line-height: 0.6;
+        
+        a {
+            border-bottom: 0;
+        }
         
         a:focus {
             outline: 0;
