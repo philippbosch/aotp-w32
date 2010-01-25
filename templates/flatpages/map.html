@@ -6,12 +6,13 @@
     <script type="text/javascript">
         function initialize() {
           if (GBrowserIsCompatible()) {
-            var map = new GMap2(document.getElementById("map_canvas"));
-            var point = new GLatLng(50.738248,7.098005);
+            var map = new GMap2(document.getElementById("map_canvas"), {'size': new GSize(616,400)});
+            var point = new GLatLng(50.738068,7.098065);
             var marker = new GMarker(point);
             map.addOverlay(marker);
             map.setCenter(point, 16);
-            map.addOverlay(new GSmallMapControl());
+            var defaultUI = map.getDefaultUI();
+            map.setUI(defaultUI);
           }
         }
         window.addEventListener('load', initialize, false);
