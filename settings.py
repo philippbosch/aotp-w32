@@ -180,6 +180,11 @@ COMPRESS_OUTPUT_DIR = 'compressed'
 
 
 
+GOOGLE_ANALYTICS_ID = "UA-3906778-11"
+SETTINGS_TO_PROPAGATE_TO_CONTEXT = ('GOOGLE_ANALYTICS_ID',)
+
+
+
 try:
     execfile(os.path.join(os.path.dirname(__file__), "settings_local.py"))
 except IOError:
