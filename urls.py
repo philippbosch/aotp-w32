@@ -9,5 +9,4 @@ urlpatterns = patterns('',
     url(r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': os.path.join(settings.PROJECT_ROOT, 'media')}),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^fotos/', include('photos.urls')),
-    url(r'^$', 'django.views.generic.simple.direct_to_template', {'template':'base.html'}),
 )
