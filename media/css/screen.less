@@ -2,16 +2,16 @@
 
 html, body {
     height: 100%;
+    background: #F0F0E9 url("../img/bg.png") repeat;
+    background-attachment: fixed;
 }
 
 body {
-    background: #F0F0E9 url("../img/bg.png") repeat;
+    margin-top: 10px;
     color: #333;
     color: rgba(0,0,0,0.75);
-    border-top: 10px solid #363630;
     font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Helvetica, Arial, sans-serif;
     font-size: 90%;
-    overflow: hidden;
 }
 
 a {
@@ -20,13 +20,29 @@ a {
 }
 
 #page {
-    width: 960px;
-    margin: 48px auto;
+    width: 920px;
+    min-height: 100%;
+    margin: 0 auto;
+    background: url("../img/content-bg.png") repeat-y;
+    background-position: 184px 0;
 }
 
 #header {
-    margin-bottom: 60px;
-
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding-left: 184px;
+    border-top: 10px solid #363630;
+    
+    #title {
+        width: 616px;
+        margin: 0 auto;
+        background: url('../img/header-bg.png') bottom left repeat-x;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    
     h1 {
         font-size: 275%;
         font-family: Georgia, "Times New Roman";
@@ -41,29 +57,32 @@ a {
 
 #nav {
     float: left;
-    width: 250px;
+    width: 167px;
+    text-align: right;
+    position: fixed; /* */
+    margin-right: 17px;
+    
+    ul {
+        position: absolute;
+        top: 186px;
+        right: 0;
+    }
     
     li {
         a {
-            font-size: 130%;
-            letter-spacing: -0.0em;
+            font-size: 90%;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
             display: block;
-            padding: 8px 8px 8px 0px;
-            color: rgba(0,0,0,0.5);
-            background: rgba(255,255,255,0.5);
-            border: 1px solid rgba(0,0,0,0.08);
-            margin-bottom: 4px;
-            margin-left: -1000px;
-            padding-left: 1000px;
-            margin-right: -1000px;
-            padding-right: 1000px;
+            padding: 8px 0px;
+            color: rgba(0,0,0,0.4);
         }
     }
     
     li a:hover, li.active a {
         border-color: rgba(0,0,0,0.12);
         color: rgba(0,0,0,0.75);
-        background: rgba(255,255,255,0.8);
     }
     
     li.active a {
@@ -72,15 +91,16 @@ a {
 }
 
 #content {
-    width: 650px;
-    min-height: 500px;
-    padding: 0 30px;
+    width: 616px;
+    padding: 190px 60px 30px 60px;
+    margin-left: 184px; /* */
     float: left;
-    background: #F0F0E9 url("../img/bg.png") repeat;
+    background: url("../img/content-bg.png") repeat-y;
 }
 
 #footer {
     clear: both;
+    float: left;
 }
 
 h3 {
@@ -100,7 +120,7 @@ p:first-child {
 .gallery {
     position: relative;
     width: 650px;
-    height: 486px;
+    height: 462px;
     
     .photo {
         position: absolute;
@@ -117,19 +137,19 @@ p:first-child {
     
     .caption {
         position: absolute;
-        left: -280px;
+        left: -230px;
         bottom: 40px;
-        width: 250px;
+        width: 150px;
         text-align: right;
-        font-size: 85%;
+        font-size: 80%;
         line-height: 1.5;
     }
     
     .gallery-nav {
         position: absolute;
-        left: -280px;
+        left: -230px;
         bottom: 0;
-        width: 250px;
+        width: 150px;
         text-align: right;
         font-size: 250%;
         line-height: 0.6;

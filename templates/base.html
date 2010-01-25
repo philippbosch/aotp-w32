@@ -20,25 +20,19 @@
 
 <body{% block body_attr %} class="{% block body_class %}{% endblock %}"{% endblock %}>
     <div id="page">
-        <div id="header">
-            <h1>Büro Wilhelmstraße</h1>
-            <h2>EG, 100 m², 4 Räume, direkt gegenüber des Gerichts</h2>
-        </div>
-        
         
         <div id="nav">
             {% navbar %}
         </div>
         
         <div id="content">
+            <div id="header">
+                <div id="title">
+                    <h1>Büro Wilhelmstraße</h1>
+                    <h2>Büroetage mit fünf Räumen gegenüber Amts- und Landgericht</h2>
+                </div>
+            </div>
             {% block content %}
-            <h3>Lorem ipsum dolor sit amet</h3>
-            <p>Die Büroetage befindet sich im Erdgeschoss eines gegenüber dem Amts- und Landgericht Bonn gelegenen, unter Denkmalschutz stehenden Gebäudes. Das Gebäude ist in den letzten Jahren teilweise umgebaut und vollständig saniert worden.</p>
-            <p>Im Erdgeschoss befinden sich fünf Büroräume. Im Untergeschoss lässt sich ein weiterer, heller Arbeitsplatz einrichten (alle Anschlüsse sind vorhanden); außerdem sind dort eine kleine eingerichtete Küchenzeile, zwei WC sowie ein ca. 12 m² großer Raum, der als Archiv oder Aktenlager zu nutzen ist und in dem die Anschlüsse für den Computer-Server sowie die Telefonanlage liegen. Die beiden Etagen sind mit einer Innentreppe in einem vollständig verglasten, zum Garten hin gelegenen modernen Anbau verbunden.</p>
-            <p>Die Räume sind entsprechend dem Stil der Gründerzeit restauriert worden: Im Erdgeschoss Stuckdecken und in allen Räumen versiegelte Holzböden, größtenteils Parkett. Raumhöhe ca. 3,50 m. Alle Räume sind mit moderner Beleuchtung ausgestattet (Deckenstrahler und Niedervoltlampen).</p>
-            <p>Technisch befindet sich die Büroetage auf aktuellem Stand. Die Fenster sind insgesamt erneuert und alle Fenster sind mit Isolierglas ausgestattet; ein Energieausweis der Fa. Ista aus dem Jahr 2009 bestätigt einen im grünen Bereich liegenden, also geringen Heizkostenverbrauch. Sämtliche Elektro- und Sanitärinstallationen sind erneuert worden. Alle Räume sind mit jeweils mehreren Computer- und Telefonanschlüssen sowie Elektrosteckdosen ausgestattet, so dass eine größtmögliche Freiheit für die Möblierung gewährleistet ist.</p>
-            <p>Die Mietnebenkosten lagen in der Vergangenheit bei etwa 250 € monatlich.</p>
-            <p>Vermietet wird von den Eigentümern unmittelbar. Maklerkosten fallen also nicht an.</p>
             {% endblock %}
         </div>
         
